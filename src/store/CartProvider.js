@@ -76,12 +76,16 @@ const CartProvider = (props) => {
       id: id,
     });
   };
+  const clearCartHandler= ()=>{
+    dispatchCartAction({})
+  }
 
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    clearCart:clearCartHandler
   };
   return (
     <CartContext.Provider value={cartContext}>
