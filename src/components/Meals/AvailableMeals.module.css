@@ -10,7 +10,16 @@
     margin: 0;
     padding: 0;
   }
+
+  .loadingState {
+    text-align: center;
+    color:white;
+  }
   
+  .error{
+    text-align: center;
+    color: red;
+  }
   @keyframes meals-appear {
     from {
       opacity: 0;
